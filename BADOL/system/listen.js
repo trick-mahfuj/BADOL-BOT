@@ -51,11 +51,25 @@ const sky = gradient('#3446eb', '#3455eb', '#3474eb');
           global.data.commandBanned.set(idUsers, dataU.data.commandBanned);
         }
       });
-      global.loading(`deployed ${chalk.blueBright(`${global.data.allThreadID.length}`)} groups and ${chalk.blueBright(`${global.data.allUserID.length}`)} users\n\n${chalk.blueBright(`BADOL PROJECT VERSION 4.0.0`)}\n`, "• BADOL DATA •");
-    } catch (error) {
-      logger.loader(`can't load environment variable, error : ${error}`, 'error');
-    }
-  })();	
+      global.loading(`deployed ${chalk.blueBright(`${global.data.allThreadID.length}`)} groups and ${chalk.blueBright(`${global.data.allUserID.length}`)} users\n\n${chalk.blue(`_____________________________________________
+
+
+┳┓┏┓┳┓┏┓┓ ┳┓┏┓┏┳┓
+┣┫┣┫┃┃┃┃┃ ┣┫┃┃ ┃ 
+┻┛┛┗┻┛┗┛┗┛┻┛┗┛ ┻ 
+________________________________________
+OWNNER   : MOHAMMAD BADOL
+Facebook   : https://www.facebook.com/MBC.K1NG.007
+Whatsapp   : wa.me/+8801782721761
+
+ MSG Enjoy BADOL-BOT-007🥰
+ _______________________________________ 
+BADOL PROJECT VERSION 4.0.0
+_______________________________________`)}\n`, "data");
+		} catch (error) {
+			logger.loader(`can't load environment variable, error : ${error}`, 'error');
+		}
+	})();	
  
 const operator = global.config.OPERATOR.length;
 const admin = global.config.ADMINBOT.length;
@@ -100,4 +114,3 @@ return (event) => {
     }
   };
 };
- 
