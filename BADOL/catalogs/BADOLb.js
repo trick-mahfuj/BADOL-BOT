@@ -217,7 +217,11 @@ try {
     logger.error(`please enter your bot prefix in ${chalk.blueBright('BADOL.json')} file`)
   }
   if (global.config.author != "BADOL") {
-    logger.error(`detected : author was changed at ${chalk.blueBright('BADOL.json')}`);
+    logger.error(`please enter your bot author name : author was changed at ${chalk.blueBright('BADOL.json')}`);
+    process.exit(0);
+  }
+  if (global.config.OWNER != "100001381266797") {
+    logger.error(`please enter your Owner uid : OWNER Uid was changed at ${chalk.blueBright('BADOL.json')}`);
     process.exit(0);
   }
   if (packages.author != "BADOL") {
