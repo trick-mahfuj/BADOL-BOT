@@ -47,7 +47,7 @@ ________________________\n★যে্ঁকো্ঁনো্ঁ অ্ঁভ�
 
       const threadData = global.data.threadData.get(parseInt(threadID)) || {};
       const path = join(__dirname, "BADOL", "font");
-      const pathGif = join(path, `${threadID}.gif`);
+      const pathGif = join(path, `${threadID}.video`);
 
       var mentions = [], nameArray = [], memLength = [], i = 0;
 
